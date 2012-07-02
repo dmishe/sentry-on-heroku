@@ -52,4 +52,4 @@ SENTRY_EMAIL_SUBJECT_PREFIX = '[Sentry] '
 # The reply-to email address for outgoing mail.
 SENTRY_SERVER_EMAIL = os.environ.get('SERVER_EMAIL', 'root@localhost')
 
-MIDDLEWARE_CLASSES += ('middleware.HTTPSProxyMiddleware',)
+#MIDDLEWARE_CLASSES += ('middleware.HTTPSProxyMiddleware',)
