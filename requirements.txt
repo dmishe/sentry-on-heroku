@@ -23,6 +23,6 @@ pynliner==0.4.0
 python-dateutil==1.5
 pytz==2012c
 raven==1.9.4
-sentry==4.7.7
+sentry==4.7.9
 simplejson==2.4.0
 wsgiref==0.1.2
