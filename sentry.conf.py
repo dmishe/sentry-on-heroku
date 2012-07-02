@@ -23,7 +23,7 @@ SENTRY_WEB_PORT = int(os.environ.get('PORT', 9000))
 SENTRY_WEB_OPTIONS = {
     'workers': 8,
     'worker_class': 'gevent',
-    'secure_scheme_headers': {'X-FORWARDED-PROTO':'https'}
+    'secure_scheme_headers': {'X-FORWARDED-PROTO': 'https'}
 }
 
 SENTRY_URL_PREFIX = os.environ.get('SENTRY_URL_PREFIX', '')
@@ -48,9 +48,7 @@ SENTRY_ADMINS = os.environ.get('ADMINS', '').split(',')
 SENTRY_MAIL_LEVEL = logging.WARNING
 
 # The prefix to apply to outgoing emails.
-SENTRY_EMAIL_SUBJECT_PREFIX = '[Sentry] '
+SENTRY_EMAIL_SUBJECT_PREFIX = os.environ.get('SERVER_EMAIL', 'root@localhost')' '
 
 # The reply-to email address for outgoing mail.
 SENTRY_SERVER_EMAIL = os.environ.get('SERVER_EMAIL', 'root@localhost')
-
-#MIDDLEWARE_CLASSES += ('middleware.HTTPSProxyMiddleware',)
