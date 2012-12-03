@@ -32,6 +32,10 @@ SENTRY_URL_PREFIX = os.environ.get('SENTRY_URL_PREFIX', '')
 # Email configuration
 # -------------------
 
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
 EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME')

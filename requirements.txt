@@ -33,3 +33,4 @@ raven==2.0.9
 sentry==5.0.20.1
 simplejson==2.6.2
 wsgiref==0.1.2
+django-ses==0.4.1
