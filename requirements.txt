@@ -34,7 +34,7 @@ pynliner==0.4.0
 python-dateutil==1.5
 python-openid==2.2.5
 pytz==2012h
-raven==2.0.9
+raven==3.1.9
 sentry==5.3.3
 simplejson==2.6.2
 six==1.2.0
