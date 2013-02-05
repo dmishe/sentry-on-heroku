@@ -47,7 +47,11 @@ Follow the steps below to get Sentry up and running on Heroku:
 
         heroku run "sentry --config=sentry.conf.py createsuperuser"
 
-That's it!
+7. Restart the app so everything is up-to-date
+
+        heroku restart
+
+That's it! Open your newly created sentry server: `heroku open`
 
 
 Email notifications
