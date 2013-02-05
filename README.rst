@@ -21,7 +21,7 @@ Follow the steps below to get Sentry up and running on Heroku:
 
 2. Add database to the application::
 
-        heroku addons:add shared-database
+        heroku addons:add heroku-postgresql:dev
 
 3. Set Sentry's shared secret for global administration privileges::
 
