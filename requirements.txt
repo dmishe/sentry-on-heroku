@@ -38,7 +38,7 @@ python-dateutil==1.5
 python-openid==2.2.5
 pytz==2012j
 raven==3.3.8
-redis==2.7.0
+redis==2.7.6
 sentry==dev
 simplejson==3.1.0
 six==1.2.0
