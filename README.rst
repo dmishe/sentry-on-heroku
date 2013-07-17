@@ -23,6 +23,11 @@ Follow the steps below to get Sentry up and running on Heroku:
 
         heroku addons:add heroku-postgresql:dev
 
+4. Set the heroku app name (and custom domain if needed)
+
+      heroku config:add HEROKU_APP_NAME='my_app_name'
+      heroku config:add CUSTOM_DOMAIN='.customdomain.com'
+
 3. Set Sentry's shared secret for global administration privileges::
 
         heroku config:add SENTRY_KEY='0123456789abcde'

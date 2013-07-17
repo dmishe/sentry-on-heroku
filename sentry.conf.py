@@ -47,7 +47,13 @@ EMAIL_USE_TLS = True
 
 # Hosts
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
+ALLOWED_HOSTS = [
+    '%s.herokuapp.com' % os.environ.get('HEROKU_APP_NAME'),
+]
+
+if os.environ.get('CUSTOM_DOMAIN'):
+    ALLOWED_HOSTS.append(os.environ.get('CUSTOM_DOMAIN'))
+
 
 # Disable the default admins (for email)
 ADMINS = ()
