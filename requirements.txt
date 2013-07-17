@@ -20,7 +20,7 @@ django-paging==0.2.5
 django-picklefield==0.3.0
 django-ses==0.4.1
 django-static-compiler==0.3.0
-django-social-auth==0.7.23
+django-social-auth==0.7.24
 django-social-auth-trello==1.0.3
 django-templatetag-sugar==0.1.0
 gevent==0.13.7
