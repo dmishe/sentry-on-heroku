@@ -5,7 +5,7 @@ South==0.7.6
 amqp==1.0.6
 amqplib==1.0.2
 anyjson==0.3.3
-billiard==2.7.3.19
+billiard==2.7.3.21
 boto==2.8.0
 celery==3.0.15
 cssutils==0.9.9
