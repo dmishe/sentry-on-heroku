@@ -45,6 +45,10 @@ EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+# Hosts
+
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
+
 # Disable the default admins (for email)
 ADMINS = ()
 
